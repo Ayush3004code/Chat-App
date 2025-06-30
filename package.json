@@ -2,9 +2,12 @@
   "name": "chat-app",
   "version": "1.0.0",
   "description": "A chat-app made using MERN Stack",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "build": "npm install && cd frontend && npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/Ayush3004code/Chat-App/issues"
   },
-  "homepage": "https://github.com/Ayush3004code/Chat-App#readme"
+  "homepage": "https://github.com/Ayush3004code/Chat-App#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  }
 }
